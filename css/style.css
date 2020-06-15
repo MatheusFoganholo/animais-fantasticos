@@ -142,6 +142,10 @@ body {
 /* FAQ Area */
 .faq-lista {
     grid-column: 2 / 4;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .faq-lista dt {
@@ -204,6 +208,7 @@ body {
 }
 
 /* JavaScript Classes */
+/* Navigation by Tabs */
 .js .js-tabcontent section {
     display: none;
     animation: show 0.5s forwards;
@@ -213,7 +218,7 @@ body {
     display: block !important;
 }
 
-/* Animation */
+/* Tab Menu Nav Animation */
 @keyframes show {
     from {
         opacity: 0;
@@ -225,6 +230,36 @@ body {
     }
 }
 
+/* Accordion List */
+.js .js-accordion dd {
+    display: none;
+}
+
+.js-accordion dt::after {
+    content: '▼';
+    margin-left: 10px;
+}
+
+.js-accordion dt.active::after {
+    content: '▲';
+}
+
+.js-accordion dd.active {
+    display: block;
+    animation: slideDown 0.5s forwards;
+}
+
+/* Accordion Animation */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0px;
+    }
+    to {
+        max-height: 200px;
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 /* Responsivity */
 @media (max-width: 700px) {
