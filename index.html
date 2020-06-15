@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais Fantásticos</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.className += 'js';</script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <!-- Menu -->
-    <nav class="menu">
+    <nav class="menu" id="menu">
         <ul>
             <li><a href="#animais">Animais</a></li>
             <li><a href="#faq">FAQ</a></li>
@@ -22,34 +23,34 @@
     <!-- Animal's List -->
     <section class="grid-section animais" id="animais">
         <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista">
+        <ul class="animais-lista js-tabmenu">
             <li>
-                <img src="img/imagem1.jpg">
+                <img src="img/imagem1.jpg" alt="Raposa">
             </li>
 
             <li>
-                <img src="img/imagem2.jpg">
+                <img src="img/imagem2.jpg" alt="Esquilo">
             </li>
 
             <li>
-                <img src="img/imagem3.jpg">
+                <img src="img/imagem3.jpg" alt="Urso">
             </li>
 
             <li>
-                <img src="img/imagem4.jpg">
+                <img src="img/imagem4.jpg" alt="Lobo">
             </li>
 
             <li>
-                <img src="img/imagem5.jpg">
+                <img src="img/imagem5.jpg" alt="Macaco">
             </li>
 
             <li>
-                <img src="img/imagem6.jpg">
+                <img src="img/imagem6.jpg" alt="Leão">
             </li>
         </ul><!--animais-lista-->
 
         <!-- Descrição dos Animais -->
-        <div class="animais-descricao">
+        <div class="animais-descricao js-tabcontent">
             <!-- Raposa -->
             <section>
                 <h2>Raposa</h2>
