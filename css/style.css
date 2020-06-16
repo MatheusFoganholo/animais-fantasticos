@@ -56,7 +56,8 @@ body {
     display: grid;
     grid-template-columns: 90px 300px 1fr;
     grid-gap: 20px;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Site Title */
@@ -65,12 +66,12 @@ body {
     font-size: 5rem;
     line-height: 1.1em;
     font-weight: 600;
-    margin-top: 2rem;
     grid-column: 1 / 4;
     text-align: center;
     text-transform: uppercase;
 }
 
+/* Title Description */
 .animais h3 {
     grid-column: 1/4;
     margin-top: -5px;
@@ -78,7 +79,7 @@ body {
     color: #E54;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 /* Animals List Title */
@@ -188,10 +189,12 @@ body {
 /* Contact Area */
 .mapa {
     grid-column: 2;
+    margin-top: 0.5rem;
 }
 
 .dados {
     grid-column: 3;
+    margin-top: 0.5rem;
 }
 
 .dados li {
@@ -293,12 +296,16 @@ body {
     }
 
     .grid-section h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     /* Animals Section */
     .animais-lista {
         grid-column: 1;
+    }
+
+    .animais h3 {
+        font-size: 0.9rem;
     }
 
     /* FAQ Area */
