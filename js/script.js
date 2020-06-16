@@ -4,6 +4,7 @@ function initTabNav() {
     const tabMenu = document.querySelectorAll('.js-tabmenu li');
     const tabContent = document.querySelectorAll('.js-tabcontent section');
 
+    // If TabMenu and Tab Content Exists
     if(tabMenu.length && tabContent.length) {
         tabContent[0].classList.add('active-tab')
 
@@ -31,6 +32,7 @@ function initAccordion() {
     const accordionList = document.querySelectorAll('.js-accordion dt');
     const activeClass = 'active';
 
+    // If Accordion Exists
     if(accordionList.length) {
         accordionList[0].classList.add(activeClass);
         accordionList[0].nextElementSibling.classList.add(activeClass);
@@ -73,7 +75,30 @@ function initSmoothScroll() {
     })
 }
 
-// Init Functions
+function initAnimeWhenScroll() {
+    const sections = document.querySelectorAll('.js-scroll');
+
+    // If Sections Exists
+    if (sections.length) {
+        const halfWindow = window.innerHeight * 0.6;
+
+        function animaScroll() {
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const isSectionVisible = (sectionTop - halfWindow) < 0;
+                if(isSectionVisible) {
+                    section.classList.add('activate')
+                }
+            })
+        }
+
+        animaScroll();
+        window.addEventListener('scroll', animaScroll);
+    }
+}
+
+// Initializing Functions
 initAccordion();
 initTabNav();
 initSmoothScroll();
+initAnimeWhenScroll();
