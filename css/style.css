@@ -115,7 +115,7 @@ body {
 
 /* Animals Photo List */
 .animais-lista {
-    height: 370px;
+    height: 400px;
     overflow-y: scroll;
     grid-column: 2;
     margin-left: -100px;
@@ -167,7 +167,7 @@ body {
 }
 
 .faq-lista dt:first-child {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .faq-lista dt::before {
