@@ -42,22 +42,53 @@
     cursor: pointer;
 }
 
-/* Modal's Inputs and Labels */
+/* Modal's Inputs, Labels and Links */
 .modal label {
     display: block;
     font-family: Georgia, monospace;
     font-weight: bold;
     margin-bottom: .5rem;
+    color: #222222;
 }
 
 .modal label:nth-of-type(2) {
     margin: 1rem 0 .5rem 0;
 }
 
+.modal label:nth-of-type(2)::after {
+    content: 'Esqueceu sua senha?';
+    position: absolute;
+    right: 40px;
+    font-weight: normal;
+    color: #E54;
+    cursor: pointer;
+}
+
+.modal label:nth-of-type(2):hover::after {
+    text-decoration: underline;
+}
+
 .modal input {
     width: 100%;
     padding: .7rem .5rem;
     box-sizing: border-box;
+    outline: none;
+}
+
+.modal p {
+    color: #222222;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+}
+
+.modal p a {
+    color: #E54;
+    text-decoration: none;
+}
+
+.modal p a:hover {
+    text-decoration: underline;
 }
 
 .modal button[type="submit"] {
@@ -70,6 +101,7 @@
     font-size: 1.1rem;
     font-family: Georgia;
     color: white;
+    cursor: pointer;
 }
 
 /* Modal Animation */
