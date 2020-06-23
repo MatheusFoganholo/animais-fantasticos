@@ -1,3 +1,90 @@
-.menu li a { 
-    background-color: black;
+/* Modal Area */
+.modal-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.modal-active {
+    display: flex;
+}
+
+/* Modal */
+.modal {
+    background-color: white;
+    min-width: 300px;
+    padding: 40px;
+    border: 8px solid #FB5;
+    box-shadow: 0 0 0 8px white;
+    position: relative;
+}
+
+/* X Button (Close Button) */
+.close-modal {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: #E54;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Modal's Inputs and Labels */
+.modal label {
+    display: block;
+    font-family: Georgia, monospace;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.modal label:nth-of-type(2) {
+    margin: 1rem 0 .5rem 0;
+}
+
+.modal input {
+    width: 100%;
+    padding: .7rem .5rem;
+    box-sizing: border-box;
+}
+
+.modal button[type="submit"] {
+    display: block;
+    background-color: #E54;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    padding: .7rem 2rem;
+    font-size: 1.1rem;
+    font-family: Georgia;
+    color: white;
+}
+
+/* Modal Animation */
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Modal Activation */
+.modal-active .modal {
+    animation: modal .3s forwards;
 }

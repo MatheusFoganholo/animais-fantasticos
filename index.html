@@ -10,144 +10,161 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <!-- Menu -->
-    <nav class="menu" data-menu="smooth">
-        <ul>
-            <li><a href="#animais">Animais</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <!-- → -->
-        </ul>
-    </nav>
+    <div class="grid-container">
 
-    <!-- Animal's List -->
-    <section class="grid-section animais" id="animais" data-anime="scroll">
-        <h1 class="titulo">Animais Fantásticos</h1>
-        <h3>Clique na foto dos animais para saber mais</h3>
+        <!-- Menu -->
+        <nav class="menu" data-menu="smooth">
+            <ul>
+                <li><a href="#animais">Animais</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a data-modal="open-modal" href="login.html">Login →</a></li>
+                <!-- → -->
+            </ul>
+        </nav>
 
-        <ul class="animais-lista" data-tab="menu">
-            <li>
-                <img src="img/lion.jpg" alt="Leão">
-            </li>
+        <!-- Animal's List -->
+        <section class="grid-section animais" id="animais" data-anime="scroll">
+            <h1 class="titulo">Animais Fantásticos</h1>
+            <h3>Clique na foto dos animais para saber mais</h3>
 
-            <li>
-                <img src="img/squirrel.jpg" alt="Esquilo">
-            </li>
+            <ul class="animais-lista" data-tab="menu">
+                <li>
+                    <img src="img/lion.jpg" alt="Leão">
+                </li>
 
-            <li>
-                <img src="img/bear.jpg" alt="Urso">
-            </li>
+                <li>
+                    <img src="img/squirrel.jpg" alt="Esquilo">
+                </li>
 
-            <li>
-                <img src="img/fox.jpg" alt="Raposa">
-            </li>
+                <li>
+                    <img src="img/bear.jpg" alt="Urso">
+                </li>
 
-            <li>
-                <img src="img/baboon.jpg" alt="Macaco">
-            </li>
+                <li>
+                    <img src="img/fox.jpg" alt="Raposa">
+                </li>
 
-            <li>
-                <img src="img/wolf.jpg" alt="Lobo">
-            </li>
-        </ul><!--animais-lista-->
+                <li>
+                    <img src="img/baboon.jpg" alt="Macaco">
+                </li>
 
-        <!-- Animals Description -->
-        <div class="animais-descricao" data-tab="content">
-            <!-- Lion/Leão -->
-            <section>
-                <h2>Leão</h2>
-                <p>O leão é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae. A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única população remanescente em perigo, no Parque Nacional da Floresta de Gir, Gujarat, Índia.</p>
-                <p>A pelagem é unicolor de coloração castanha, e os machos apresentam uma juba característica. Uma das características mais marcantes da espécie é a presença de um tufo de pelos pretos na cauda, que também possui uma espora.</p>
-                <p>Habita preferencialmente as savanas e pastagens abertas, mas pode ser encontrado em regiões mais arbustivas.</p>
-                <p>A espécie está classificada como "vulnerável" pela União Internacional para a Conservação da Natureza e dos Recursos Naturais (IUCN), na Ásia, o leão está confinado a uma única área protegida e sua população é estável, mas está classificado como "em perigo", já que a população não passa de 350 animais.</p>
-            </section><!--lion-->
-            
-            <!-- Squirrel/Esquilo -->
-            <section>
-                <h2>Esquilo</h2>
-                <p>Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae.</p>
-                <p>Os esquilos estão espalhados por quase todo o mundo, a maioria nas zonas de climas temperado ou tropical, mas também em algumas zonas de clima frio. Como todos os roedores, possui presas fortíssimas, com que roem facilmente sementes, principalmente bolotas.</p>
-                <p>As sementes são as principais fontes de alimentação, mas também consomem insetos e frutas. Quando coletam alimento, enterram algumas sementes que encontram, sendo que algumas chegam a germinar, como pinhões e coquinhos, acabando por plantar árvores como araucária e jerivá.</p>
-                <p>Quando adulto, as maiores espécies da família chegam a medir de 53 a 73 cm de comprimento (com a cauda).</p>
-            </section><!--squirrel-->
+                <li>
+                    <img src="img/wolf.jpg" alt="Lobo">
+                </li>
+            </ul><!--animais-lista-->
 
-            <!-- Bear/Urso -->
-            <section>
-                <h2>Urso</h2>
-                <p>Os Ursos (latim científico: Ursidae) constituem uma família de mamíferos plantígrados, da ordem Carnivora, geralmente de grande porte, contendo os ursos e os pandas. Embora classificado como urso, e logo após, como procionídeo, junto com o panda-vermelho, o panda-gigante foi recolocado dentro da família dos ursídeos devido às novas pesquisas genéticas.</p>
-                <p>Algumas características comuns dos ursos são pelagem espessa, rabo curto, o olfato desenvolvido e as garras não retráteis. Os ursídeos são geralmente animais omnívoros.</p>
-                <p>As espécies mais antigas e primitivas desta família estão reunidas no gênero Ballusia, do Mioceno Inferior.</p>
-                <p>Os ursos existem em todos os continentes, em exceção na África, embora algumas fontes afirmem terem avistado o Urso nandi, mas sem comprovarem a sua existência.</p>
-            </section><!--bear-->
+            <!-- Animals Description -->
+            <div class="animais-descricao" data-tab="content">
+                <!-- Lion/Leão -->
+                <section>
+                    <h2>Leão</h2>
+                    <p>O leão é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae. A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única população remanescente em perigo, no Parque Nacional da Floresta de Gir, Gujarat, Índia.</p>
+                    <p>A pelagem é unicolor de coloração castanha, e os machos apresentam uma juba característica. Uma das características mais marcantes da espécie é a presença de um tufo de pelos pretos na cauda, que também possui uma espora.</p>
+                    <p>Habita preferencialmente as savanas e pastagens abertas, mas pode ser encontrado em regiões mais arbustivas.</p>
+                    <p>A espécie está classificada como "vulnerável" pela União Internacional para a Conservação da Natureza e dos Recursos Naturais (IUCN), na Ásia, o leão está confinado a uma única área protegida e sua população é estável, mas está classificado como "em perigo", já que a população não passa de 350 animais.</p>
+                </section><!--lion-->
+                
+                <!-- Squirrel/Esquilo -->
+                <section>
+                    <h2>Esquilo</h2>
+                    <p>Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae.</p>
+                    <p>Os esquilos estão espalhados por quase todo o mundo, a maioria nas zonas de climas temperado ou tropical, mas também em algumas zonas de clima frio. Como todos os roedores, possui presas fortíssimas, com que roem facilmente sementes, principalmente bolotas.</p>
+                    <p>As sementes são as principais fontes de alimentação, mas também consomem insetos e frutas. Quando coletam alimento, enterram algumas sementes que encontram, sendo que algumas chegam a germinar, como pinhões e coquinhos, acabando por plantar árvores como araucária e jerivá.</p>
+                    <p>Quando adulto, as maiores espécies da família chegam a medir de 53 a 73 cm de comprimento (com a cauda).</p>
+                </section><!--squirrel-->
 
-            <!-- Fox/Raposa -->
-            <section>
-                <h2>Raposa</h2>
-                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-                <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-                <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do
-                qual a raposa vermelha é a mais comum.</p>
-                <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-                <p>As raposas são caçadoras oportunistas e apanham suas presas vivas. A técnica de caça mais comum, aprimorada desde a juventude, é pular sobre a presa para matá-la rapidamente.</p>
-            </section><!--fox-->
+                <!-- Bear/Urso -->
+                <section>
+                    <h2>Urso</h2>
+                    <p>Os Ursos (latim científico: Ursidae) constituem uma família de mamíferos plantígrados, da ordem Carnivora, geralmente de grande porte, contendo os ursos e os pandas. Embora classificado como urso, e logo após, como procionídeo, junto com o panda-vermelho, o panda-gigante foi recolocado dentro da família dos ursídeos devido às novas pesquisas genéticas.</p>
+                    <p>Algumas características comuns dos ursos são pelagem espessa, rabo curto, o olfato desenvolvido e as garras não retráteis. Os ursídeos são geralmente animais omnívoros.</p>
+                    <p>As espécies mais antigas e primitivas desta família estão reunidas no gênero Ballusia, do Mioceno Inferior.</p>
+                    <p>Os ursos existem em todos os continentes, em exceção na África, embora algumas fontes afirmem terem avistado o Urso nandi, mas sem comprovarem a sua existência.</p>
+                </section><!--bear-->
 
-            <!-- Baboon/Babuíno Mandril -->
-            <section>
-                <h2>Babuíno</h2>
-                <p>Babuíno (do francês babouin) é a designação genérica para antropoides cercopitecídeos do gênero Papio e afins, caracterizados pelo focinho pontudo, caninos grandes, bochechas volumosas e calosidades nas nádegas.</p>
-                <p>É um animal semi-quadrúpede da ordem dos primatas que mede até 120 centímetros de comprimento.</p>
-                <p>Vive na África e seu habitat natural é nos campos abertos (savana, pastagens ou terrenos rochosos).</p>
-                <p>Ao contrário dos macacos, os babuínos passam a maior parte do tempo no chão. Suas caudas não são preênseis. Os babuínos são grandes lutadores e demonstram pouco medo de outros animais, inclusive seres humanos.</p>
-            </section><!--baboon-->
+                <!-- Fox/Raposa -->
+                <section>
+                    <h2>Raposa</h2>
+                    <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+                    <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                    <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do
+                    qual a raposa vermelha é a mais comum.</p>
+                    <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                    <p>As raposas são caçadoras oportunistas e apanham suas presas vivas. A técnica de caça mais comum, aprimorada desde a juventude, é pular sobre a presa para matá-la rapidamente.</p>
+                </section><!--fox-->
 
-            <!-- Wolf/Lobo -->
-            <section>
-                <h2>Lobo</h2>
-                <p>Lobo (nome científico: Canis lupus) é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família canidae.</p>
-                <p>O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude, como previsto pela teoria de Christian Bergmann.</p>
-                <p>Em geral, a altura, medida a partir dos ombros, varia de 60 a 95 centímetros. O peso varia geograficamente. Em média, os lobos europeus pesam 38,5 kg.</p>
-                <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-            </section><!--wolf-->
-        </div><!--animais-descricao-->
-    </section><!--animais-->
+                <!-- Baboon/Babuíno Mandril -->
+                <section>
+                    <h2>Babuíno</h2>
+                    <p>Babuíno (do francês babouin) é a designação genérica para antropoides cercopitecídeos do gênero Papio e afins, caracterizados pelo focinho pontudo, caninos grandes, bochechas volumosas e calosidades nas nádegas.</p>
+                    <p>É um animal semi-quadrúpede da ordem dos primatas que mede até 120 centímetros de comprimento.</p>
+                    <p>Vive na África e seu habitat natural é nos campos abertos (savana, pastagens ou terrenos rochosos).</p>
+                    <p>Ao contrário dos macacos, os babuínos passam a maior parte do tempo no chão. Suas caudas não são preênseis. Os babuínos são grandes lutadores e demonstram pouco medo de outros animais, inclusive seres humanos.</p>
+                </section><!--baboon-->
 
-    <!-- FAQ Area -->
-    <section class="grid-section faq" id="faq" data-anime="scroll">
-            <h1 class="titulo">FAQ</h1>
-            <dl class="faq-lista" data-anime="accordion">
-                <dt>Qual a idade dos animais?</dt>
-                <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                <!-- Wolf/Lobo -->
+                <section>
+                    <h2>Lobo</h2>
+                    <p>Lobo (nome científico: Canis lupus) é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família canidae.</p>
+                    <p>O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude, como previsto pela teoria de Christian Bergmann.</p>
+                    <p>Em geral, a altura, medida a partir dos ombros, varia de 60 a 95 centímetros. O peso varia geograficamente. Em média, os lobos europeus pesam 38,5 kg.</p>
+                    <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                </section><!--wolf-->
+            </div><!--animais-descricao-->
+        </section><!--animais-->
 
-                <dt>Eles são fantásticos?</dt>
-                <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+        <!-- FAQ Area -->
+        <section class="grid-section faq" id="faq" data-anime="scroll">
+                <h1 class="titulo">FAQ</h1>
+                <dl class="faq-lista" data-anime="accordion">
+                    <dt>Qual a idade dos animais?</dt>
+                    <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
 
-                <dt>Qual a diferença?</dt>
-                <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                    <dt>Eles são fantásticos?</dt>
+                    <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
 
-                <dt>Como proteger?</dt>
-                <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
-            </dl><!--faq-lista-->
-    </section><!--faq-->
+                    <dt>Qual a diferença?</dt>
+                    <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
 
-    <!-- Contact Area -->
-    <section class="grid-section contato" id="contato" data-anime="scroll">
-            <h1 class="titulo">Contato</h1>
-            <div class="mapa">
-                <img src="img/map.png">
-            </div><!--mapa-->
-            <ul class="dados">
-                <li>contato@matheusfoganholo.com.br</li>
-                <li>+55 (21) 9999-9999</li>
-                <li>Rua do Conde, nº 21</li>
-                <li>Rio de Janeiro - RJ</li>
-            </ul><!--dados-->
-    </section><!--contato-->
+                    <dt>Como proteger?</dt>
+                    <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+                </dl><!--faq-lista-->
+        </section><!--faq-->
 
-    <!-- Footer Area -->
-    <footer class="copy">
-        <p>Todos os direitos reservados.</p>
-    </footer><!--copy-->
+        <!-- Contact Area -->
+        <section class="grid-section contato" id="contato" data-anime="scroll">
+                <h1 class="titulo">Contato</h1>
+                <div class="mapa">
+                    <img src="img/map.png">
+                </div><!--mapa-->
+                <ul class="dados">
+                    <li>contato@matheusfoganholo.com.br</li>
+                    <li>+55 (21) 9999-9999</li>
+                    <li>Rua do Conde, nº 21</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul><!--dados-->
+        </section><!--contato-->
 
+        <!-- Footer Area -->
+        <footer class="copy">
+            <p>Todos os direitos reservados.</p>
+        </footer><!--copy-->
+    </div><!--grid-container-->
+
+    <!-- Login Modal -->
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="close" class="close-modal">&times;</button>
+            <form action="">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                <button type="submit">Fazer Login</button>
+            </form>
+        </div><!--modal-->
+    </section><!--modal-container-->
     <!-- Javascript -->
     <script type="module" src="js/script.js"></script>
 </body>
