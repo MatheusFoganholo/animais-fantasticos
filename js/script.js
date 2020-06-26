@@ -4,9 +4,10 @@ import initSmoothScroll from './modules/smooth-scroll.js';
 import initAccordion from './modules/accordion-list.js';
 import initAnimeWhenScroll from './modules/anime-when-scroll.js';
 import initModal from './modules/modal.js';
-import initDropdownMenu from './modules/dropdown-menu.js'
-import initMenuMobile from './modules/menu-mobile.js'
-import initNumberAnimation from './modules/numbers.js'
+import initDropdownMenu from './modules/dropdown-menu.js';
+import initMenuMobile from './modules/menu-mobile.js';
+import initNumberAnimation from './modules/numbers.js';
+import initOpeningHours from './modules/opening-hours.js';
 
 // Initializing Functions
 initTabNav();
@@ -17,3 +18,4 @@ initModal();
 initDropdownMenu();
 initMenuMobile();
 initNumberAnimation();
+initOpeningHours();
