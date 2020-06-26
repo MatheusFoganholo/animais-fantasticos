@@ -5,6 +5,7 @@ import initAccordion from './modules/accordion-list.js';
 import initAnimeWhenScroll from './modules/anime-when-scroll.js';
 import initModal from './modules/modal.js';
 import initDropdownMenu from './modules/dropdown-menu.js'
+import initMenuMobile from './modules/menu-mobile.js'
 
 // Initializing Functions
 initTabNav();
@@ -13,3 +14,4 @@ initAccordion();
 initAnimeWhenScroll();
 initModal();
 initDropdownMenu();
+initMenuMobile();

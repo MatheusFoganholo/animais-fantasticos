@@ -6,7 +6,7 @@ export default function outsideClick(element, events, callback) {
     // If clicked element hasn't 'data-outside' attribute, it will add.
     if(!element.hasAttribute(outside)) {
         events.forEach(userEvent => {
-            html.addEventListener(userEvent, handleOutsideClick);
+            setTimeout(() => {html.addEventListener(userEvent, handleOutsideClick);})
         })
         element.setAttribute(outside, '');
     }
