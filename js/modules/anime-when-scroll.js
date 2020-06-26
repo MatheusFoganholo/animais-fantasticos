@@ -12,6 +12,9 @@ export default function initAnimeWhenScroll() {
                 if(isSectionVisible) {
                     section.classList.add('activate')
                 }
+                else if(section.classList.contains('activate')) {
+                    section.classList.remove('activate');
+                }
             })
         }
 
