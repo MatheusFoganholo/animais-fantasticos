@@ -8,6 +8,7 @@ import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initOpeningHours from './modules/opening-hours.js';
 import initFetchAnimals from './modules/fetch-animals.js';
+import initFetchBitcoin from './modules/fetch-bitcoin.js';
 
 // Initializing Functions
 initTabNav();
@@ -19,3 +20,4 @@ initDropdownMenu();
 initMenuMobile();
 initOpeningHours();
 initFetchAnimals();
+initFetchBitcoin();

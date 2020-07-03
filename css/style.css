@@ -232,7 +232,13 @@ body {
 
 [data-semana].open::after {
     background-color: #3F4;
+}
 
+.bitcoin {
+    background-color: #3F4;
+    padding: .2rem .5rem;
+    border-radius: 2px;
+    font-weight: bold;
 }
 
 /* Footer Area */
