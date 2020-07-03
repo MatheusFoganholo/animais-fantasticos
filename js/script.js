@@ -6,8 +6,8 @@ import initAnimeWhenScroll from './modules/anime-when-scroll.js';
 import initModal from './modules/modal.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
-import initNumberAnimation from './modules/numbers.js';
 import initOpeningHours from './modules/opening-hours.js';
+import initFetchAnimals from './modules/fetch-animals.js';
 
 // Initializing Functions
 initTabNav();
@@ -17,5 +17,5 @@ initAnimeWhenScroll();
 initModal();
 initDropdownMenu();
 initMenuMobile();
-initNumberAnimation();
 initOpeningHours();
+initFetchAnimals();
