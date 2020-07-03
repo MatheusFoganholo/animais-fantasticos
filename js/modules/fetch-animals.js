@@ -6,14 +6,18 @@ export default function initFetchAnimals() {
 
     // Picking data from json file and creating a div
     async function fetchAnimals(url) {
-        const animalsResponse = await fetch(url);
-        const animalsJSON = await animalsResponse.json();
-        const numbersGrid = document.querySelector('.numeros-grid');
-        animalsJSON.forEach(animal => {
-            const animalDiv = createAnimal(animal);
-            numbersGrid.appendChild(animalDiv);
-        });
-        initNumberAnimation();
+        try {
+            const animalsResponse = await fetch(url);
+            const animalsJSON = await animalsResponse.json();
+            const numbersGrid = document.querySelector('.numeros-grid');
+            animalsJSON.forEach(animal => {
+                const animalDiv = createAnimal(animal);
+                numbersGrid.appendChild(animalDiv);
+            });
+            initNumberAnimation();
+        } catch(erro) {
+            console.log(erro);
+        }
     }
     
     // Updating the created div for each animal
