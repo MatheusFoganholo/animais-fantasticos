@@ -1,0 +1,24 @@
+{
+  "name": "animais-fantasticos",
+  "version": "1.0.0",
+  "description": "This is the official repository of \"Animais Fantásticos\" site, a fictional project, created for portfolio, held at Javascript course from \"Origamid\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusFoganholo/animais-fantasticos-site.git"
+  },
+  "author": "Matheus Foganholo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusFoganholo/animais-fantasticos-site/issues"
+  },
+  "homepage": "https://github.com/MatheusFoganholo/animais-fantasticos-site#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
