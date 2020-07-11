@@ -1,24 +1,23 @@
 export default function initAnimeWhenScroll() {
-    const sections = document.querySelectorAll('[data-anime="scroll"]');
+  const sections = document.querySelectorAll('[data-anime="scroll"]');
 
-    // If Sections Exists
-    if (sections.length) {
-        const halfWindow = window.innerHeight * 0.6;
+  const halfWindow = window.innerHeight * 0.6;
 
-        function animaScroll() {
-            sections.forEach((section) => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const isSectionVisible = (sectionTop - halfWindow) < 0;
-                if(isSectionVisible) {
-                    section.classList.add('activate')
-                }
-                else if(section.classList.contains('activate')) {
-                    section.classList.remove('activate');
-                }
-            })
-        }
+  function animaScroll() {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const isSectionVisible = (sectionTop - halfWindow) < 0;
+      if (isSectionVisible) {
+        section.classList.add('activate');
+      } else if (section.classList.contains('activate')) {
+        section.classList.remove('activate');
+      }
+    });
+  }
 
-        animaScroll();
-        window.addEventListener('scroll', animaScroll);
-    }
+  // If Sections Exists
+  if (sections.length) {
+    animaScroll();
+    window.addEventListener('scroll', animaScroll);
+  }
 }
