@@ -27,8 +27,7 @@
 
 @media (max-width: 700px) {
     .numeros-grid {
-        grid-column: 1;
-    grid-template-columns: 1fr 1fr;
-
+        grid-column: 1 / 4;
+        grid-template-columns: 1fr 1fr;
     }
 }
