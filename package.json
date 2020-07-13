@@ -2,10 +2,10 @@
   "name": "animais-fantasticos",
   "version": "1.0.0",
   "description": "This is the official repository of \"Animais Fantásticos\" site, a fictional project, created for portfolio, held at Javascript course from \"Origamid\".",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "build": "webpack --mode production --watch js/script.js --output ./js/main.js",
-    "dev": "webpack --mode development --watch js/script.js --output ./js/main.js"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.10.4"
+    "@babel/polyfill": "^7.10.4",
+    "whatwg-fetch": "^2.0.4"
   }
 }
