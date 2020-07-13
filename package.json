@@ -4,7 +4,8 @@
   "description": "This is the official repository of \"Animais Fantásticos\" site, a fictional project, created for portfolio, held at Javascript course from \"Origamid\".",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production --watch js/script.js --output ./js/main.js",
+    "dev": "webpack --mode development --watch js/script.js --output ./js/main.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint-plugin-import": "^2.22.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   }
 }
