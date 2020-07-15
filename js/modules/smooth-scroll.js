@@ -12,7 +12,7 @@ export default class SmoothScroll {
     this.scrollToSection = this.scrollToSection.bind(this);
   }
 
-  // Function to scroll
+  // Method to scroll
   scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
@@ -20,7 +20,7 @@ export default class SmoothScroll {
     section.scrollIntoView(this.options);
   }
 
-  // Event
+  // Method: Event
   addLinkEvent() {
     // Loop
     this.internalLinks.forEach((link) => {
