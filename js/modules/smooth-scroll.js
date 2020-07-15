@@ -1,24 +1,38 @@
 // Smooth Scroll (Internal Link)
-export default function initSmoothScroll() {
+export default class SmoothScroll {
   // Selecting Links
-  const internalLinks = document.querySelectorAll('[data-menu="smooth"] a[href^="#"]');
+  constructor(links, options) {
+    this.internalLinks = document.querySelectorAll(links);
+    if (options === undefined) {
+      this.options = { behavior: 'smooth', block: 'start' };
+    } else {
+      this.options = options;
+    }
+    // Changing the 'this' to not lose the reference of "scrollToSection"
+    this.scrollToSection = this.scrollToSection.bind(this);
+  }
 
   // Function to scroll
-  function scrollToSection(event) {
+  scrollToSection(event) {
     event.preventDefault();
     const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
-    const topDist = section.offsetTop;
+    section.scrollIntoView(this.options);
+  }
 
-    // Transition
-    window.scrollTo({
-      top: topDist,
-      behavior: 'smooth',
+  // Event
+  addLinkEvent() {
+    // Loop
+    this.internalLinks.forEach((link) => {
+      link.addEventListener('click', this.scrollToSection);
     });
   }
 
-  // Loop
-  internalLinks.forEach((link) => {
-    link.addEventListener('click', scrollToSection);
-  });
+  // Method to initialize
+  init() {
+    if (this.internalLinks.length) {
+      this.addLinkEvent();
+    }
+    return this;
+  }
 }
