@@ -1,5 +1,5 @@
 // Importing Modules
-import initTabNav from './modules/navigation-by-tabs.js';
+import TabNav from './modules/navigation-by-tabs.js';
 import SmoothScroll from './modules/smooth-scroll.js';
 import Accordion from './modules/accordion-list.js';
 import initAnimeWhenScroll from './modules/anime-when-scroll.js';
@@ -18,8 +18,11 @@ smoothScroll.init();
 const accordionList = new Accordion('[data-anime="accordion"] dt');
 accordionList.init();
 
+// Navigation By Tabs
+const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+tabNav.init();
+
 // Initializing Functions
-initTabNav();
 initAnimeWhenScroll();
 initModal();
 initDropdownMenu();
