@@ -4,7 +4,7 @@
   "description": "This is the official repository of \"Animais Fantásticos\" site, a fictional project, created for portfolio, held at Javascript course from \"Origamid\".",
   "main": "index.html",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --watch",
     "dev": "webpack --mode development --watch"
   },
   "repository": {

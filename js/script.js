@@ -1,7 +1,7 @@
 // Importing Modules
 import initTabNav from './modules/navigation-by-tabs.js';
 import SmoothScroll from './modules/smooth-scroll.js';
-import initAccordion from './modules/accordion-list.js';
+import Accordion from './modules/accordion-list.js';
 import initAnimeWhenScroll from './modules/anime-when-scroll.js';
 import initModal from './modules/modal.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
@@ -14,9 +14,12 @@ import initFetchBitcoin from './modules/fetch-bitcoin.js';
 const smoothScroll = new SmoothScroll('[data-menu="smooth"] a[href^="#"]');
 smoothScroll.init();
 
+// Accordion List
+const accordionList = new Accordion('[data-anime="accordion"] dt');
+accordionList.init();
+
 // Initializing Functions
 initTabNav();
-initAccordion();
 initAnimeWhenScroll();
 initModal();
 initDropdownMenu();
