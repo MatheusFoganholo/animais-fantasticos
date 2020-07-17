@@ -2,7 +2,7 @@
 import TabNav from './modules/navigation-by-tabs.js';
 import SmoothScroll from './modules/smooth-scroll.js';
 import Accordion from './modules/accordion-list.js';
-import initAnimeWhenScroll from './modules/anime-when-scroll.js';
+import AnimeWhenScroll from './modules/anime-when-scroll.js';
 import Modal from './modules/modal.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
@@ -26,8 +26,11 @@ accordionList.init();
 const modal = new Modal('[data-modal="open-modal"]', '[data-modal="close-modal"]', '[data-modal="container"]');
 modal.init();
 
+// Anime When Scroll
+const animeWhenScroll = new AnimeWhenScroll('[data-anime="scroll"]');
+animeWhenScroll.init();
+
 // Initializing Functions
-initAnimeWhenScroll();
 initDropdownMenu();
 initMenuMobile();
 initOpeningHours();

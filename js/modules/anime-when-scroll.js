@@ -1,23 +1,44 @@
-export default function initAnimeWhenScroll() {
-  const sections = document.querySelectorAll('[data-anime="scroll"]');
+export default class AnimeWhenScroll {
+  constructor(sections) {
+    this.sections = document.querySelectorAll(sections);
+    this.halfWindow = window.innerHeight * 0.6;
+    this.checkDistance = this.checkDistance.bind(this);
+  }
 
-  const halfWindow = window.innerHeight * 0.6;
+  // Gets the distance of each item in relation to the top of the site
+  getDistance() {
+    this.distance = [...this.sections].map((section) => {
+      const offset = section.offsetTop;
+      return {
+        element: section,
+        offset: Math.floor(offset - this.halfWindow),
+      };
+    });
+  }
 
-  function animaScroll() {
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top;
-      const isSectionVisible = (sectionTop - halfWindow) < 0;
-      if (isSectionVisible) {
-        section.classList.add('activate');
-      } else if (section.classList.contains('activate')) {
-        section.classList.remove('activate');
+  // Checks the distance on each object in relation to the site scroll
+  checkDistance() {
+    this.distance.forEach((item) => {
+      if (window.pageYOffset > item.offset) {
+        item.element.classList.add('activate');
+      } else if (item.element.classList.contains('activate')) {
+        item.element.classList.remove('activate');
       }
     });
   }
 
-  // If Sections Exists
-  if (sections.length) {
-    animaScroll();
-    window.addEventListener('scroll', animaScroll);
+  // Method to initialize the function
+  init() {
+    if (this.sections.length) {
+      this.getDistance();
+      this.checkDistance();
+      window.addEventListener('scroll', this.checkDistance);
+    }
+    return this;
+  }
+
+  // Remove scroll event
+  stop() {
+    window.removeEventListener('scroll', this.checkDistance);
   }
 }
