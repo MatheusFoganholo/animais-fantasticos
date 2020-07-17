@@ -7,7 +7,7 @@ import Modal from './modules/modal.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initOpeningHours from './modules/opening-hours.js';
-import initFetchAnimals from './modules/fetch-animals.js';
+import fetchAnimals from './modules/fetch-animals.js';
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
 
 // Navigation By Tabs
@@ -31,5 +31,5 @@ initAnimeWhenScroll();
 initDropdownMenu();
 initMenuMobile();
 initOpeningHours();
-initFetchAnimals();
+fetchAnimals('../../animals-api.json', '.numeros-grid');
 initFetchBitcoin();
