@@ -8,7 +8,7 @@ import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initOpeningHours from './modules/opening-hours.js';
 import fetchAnimals from './modules/fetch-animals.js';
-import initFetchBitcoin from './modules/fetch-bitcoin.js';
+import fetchBitcoin from './modules/fetch-bitcoin.js';
 
 // Navigation By Tabs
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
@@ -31,5 +31,9 @@ initAnimeWhenScroll();
 initDropdownMenu();
 initMenuMobile();
 initOpeningHours();
+
+// Fetch Animals
 fetchAnimals('../../animals-api.json', '.numeros-grid');
-initFetchBitcoin();
+
+// Fetch Bitcoin
+fetchBitcoin('https://blockchain.info/ticker', '.bitcoin');
