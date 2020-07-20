@@ -6,7 +6,7 @@ import AnimeWhenScroll from './modules/anime-when-scroll.js';
 import Modal from './modules/modal.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
-import initOpeningHours from './modules/opening-hours.js';
+import OpeningHours from './modules/opening-hours.js';
 import fetchAnimals from './modules/fetch-animals.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 
@@ -38,8 +38,9 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-// Initializing Functions
-initOpeningHours();
+// Opening Hours
+const openingHours = new OpeningHours('[data-semana]', 'open');
+openingHours.init();
 
 // Fetch Animals
 fetchAnimals('../../animals-api.json', '.numeros-grid');
