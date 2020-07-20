@@ -4,7 +4,7 @@ import SmoothScroll from './modules/smooth-scroll.js';
 import Accordion from './modules/accordion-list.js';
 import AnimeWhenScroll from './modules/anime-when-scroll.js';
 import Modal from './modules/modal.js';
-import initDropdownMenu from './modules/dropdown-menu.js';
+import DropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initOpeningHours from './modules/opening-hours.js';
 import fetchAnimals from './modules/fetch-animals.js';
@@ -30,8 +30,11 @@ modal.init();
 const animeWhenScroll = new AnimeWhenScroll('[data-anime="scroll"]');
 animeWhenScroll.init();
 
+// Dropdown Menu
+const dropdownMenu = new DropdownMenu('[data-dropdown]');
+dropdownMenu.init();
+
 // Initializing Functions
-initDropdownMenu();
 initMenuMobile();
 initOpeningHours();
 
