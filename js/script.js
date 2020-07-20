@@ -5,7 +5,7 @@ import Accordion from './modules/accordion-list.js';
 import AnimeWhenScroll from './modules/anime-when-scroll.js';
 import Modal from './modules/modal.js';
 import DropdownMenu from './modules/dropdown-menu.js';
-import initMenuMobile from './modules/menu-mobile.js';
+import MenuMobile from './modules/menu-mobile.js';
 import initOpeningHours from './modules/opening-hours.js';
 import fetchAnimals from './modules/fetch-animals.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
@@ -34,8 +34,11 @@ animeWhenScroll.init();
 const dropdownMenu = new DropdownMenu('[data-dropdown]');
 dropdownMenu.init();
 
+// Menu Mobile
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
+
 // Initializing Functions
-initMenuMobile();
 initOpeningHours();
 
 // Fetch Animals
