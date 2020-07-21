@@ -10,6 +10,7 @@ import OpeningHours from './modules/opening-hours.js';
 import fetchAnimals from './modules/fetch-animals.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import SlideNav from './modules/slide.js';
+import SectionHeight from './modules/section-height.js';
 
 // Navigation By Tabs
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
@@ -53,3 +54,6 @@ fetchBitcoin('https://blockchain.info/ticker', '.bitcoin');
 const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();
 slide.addControl('.custom-controls');
+
+// Section Height (Animals Description)
+SectionHeight();

@@ -55,9 +55,10 @@
     margin: 1rem 0 .5rem 0;
 }
 
-.modal label:nth-of-type(2)::after {
+#forgotYourPassword {
     content: 'Esqueceu sua senha?';
     position: absolute;
+    top: 40px;
     right: 40px;
     font-weight: normal;
     color: #E54;
@@ -80,6 +81,24 @@
     font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 1rem;
+}
+
+.modal span {
+    position: absolute;
+    top: 124px;
+    right: 40px;
+    font-weight: normal;
+    color: #E54;
+    cursor: pointer;
+}
+
+.modal span a {
+    text-decoration: none;
+    color: #E54;
+}
+
+.modal span a:hover {
+    text-decoration: underline;
 }
 
 .modal p a {
@@ -121,8 +140,11 @@
     animation: modal .3s forwards;
 }
 
+@media (max-width: 700px) {
+}
+
 @media (max-width: 400px) {
-    .modal label:nth-of-type(2)::after {
+    .modal span {
         display: none;
     }
 }
