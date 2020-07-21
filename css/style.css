@@ -3,6 +3,7 @@
 @import '/css/modal.css';
 @import 'dropdown-menu.css';
 @import 'menu-mobile.css';
+@import 'slide.css';
 
 /* Reset */
 body, h1, h2, ul, li, p, dd, dt, dl {
@@ -68,6 +69,10 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+/* .grid-section:nth-of-type(3) {
+    margin-bottom: -1.5rem;
+} */
 
 /* Site Title */
 .titulo {
