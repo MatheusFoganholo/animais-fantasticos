@@ -57,6 +57,13 @@ body {
     letter-spacing: .1em;
 }
 
+.arrow-black {
+    background: url('../img/arrow-black.svg') no-repeat center center;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+
 /* Grid */
 .grid-section {
     grid-column: 2 / 4;
@@ -288,12 +295,19 @@ body {
 }
 
 [data-anime="accordion"] dt::after {
-    content: '▼';
+    content: '';
     margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url('../img/arrow-red.svg') no-repeat center center;
+    transform: rotate(90deg);
+    transition: .3s;
 }
 
 [data-anime="accordion"] dt.active::after {
-    content: '▲';
+    content: '';
+    transform: rotate(-90deg);
 }
 
 [data-anime="accordion"] dd.active {
@@ -340,6 +354,7 @@ body {
     .grid-section {
         grid-template-columns: 100px 1fr;
         grid-gap: 10px;
+        margin-bottom: 0px;
     }
 
     .grid-section h1 {
@@ -347,6 +362,10 @@ body {
     }
 
     /* Animals Section */
+    .animais {
+        margin-bottom: 0px;
+    }
+
     .animais-lista {
         grid-column: 1;
     }

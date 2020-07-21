@@ -19,11 +19,13 @@
 /* Modal */
 .modal {
     background-color: white;
-    min-width: 300px;
+    width: 80vw;
+    max-width: 600px;
     padding: 40px;
     border: 8px solid #FB5;
     box-shadow: 0 0 0 8px white;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* X Button (Close Button) */
@@ -35,10 +37,8 @@
     height: 50px;
     border: 4px solid white;
     border-radius: 50%;
-    background-color: #E54;
+    background: #E54 url('../img/close.svg') no-repeat center center;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
-    font-size: 1.7rem;
-    color: white;
     cursor: pointer;
 }
 
@@ -119,4 +119,10 @@
 /* Modal Activation */
 .modal-active .modal {
     animation: modal .3s forwards;
+}
+
+@media (max-width: 400px) {
+    .modal label:nth-of-type(2)::after {
+        display: none;
+    }
 }
