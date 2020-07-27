@@ -20,7 +20,7 @@
 .modal {
     background-color: white;
     width: 80vw;
-    max-width: 600px;
+    max-width: 400px;
     padding: 40px;
     border: 8px solid #FB5;
     box-shadow: 0 0 0 8px white;
@@ -31,7 +31,7 @@
 /* X Button (Close Button) */
 .close-modal {
     position: absolute;
-    top: -30px;
+    top: -60px;
     right: -30px;
     width: 50px;
     height: 50px;
@@ -85,7 +85,7 @@
 
 .modal span {
     position: absolute;
-    top: 124px;
+    top: 143px;
     right: 40px;
     font-weight: normal;
     color: #E54;
@@ -138,9 +138,6 @@
 /* Modal Activation */
 .modal-active .modal {
     animation: modal .3s forwards;
-}
-
-@media (max-width: 700px) {
 }
 
 @media (max-width: 400px) {

@@ -83,7 +83,7 @@ body {
 }
 
 /* Title Description */
-.animais h3 {
+.animais h3, .cadastro h3 {
     grid-column: 1/4;
     margin-top: -5px;
     margin-bottom: 3rem;
@@ -195,6 +195,10 @@ body {
     font-family: Helvetica, Arial;
     margin-bottom: .5rem;
     margin-left: 30px;
+}
+
+.faq-lista dd {
+    line-height: 1.4em;
 }
 
 /* Contact Area */
@@ -329,7 +333,7 @@ body {
         max-height: 0px;
     }
     to {
-        max-height: 200px;
+        max-height: 1000px;
         transform: translate3d(0, 0, 0);
     }
 }
@@ -382,6 +386,7 @@ body {
         margin-left: 25px;
     }
 
+    /* Contact List */
     .mapa {
         text-align: center;
     }

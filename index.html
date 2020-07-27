@@ -27,8 +27,8 @@
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a data-modal="open-modal" href="login.html">Login <span class="arrow-black"></span></a></li>
-            </ul>
-        </nav>
+            </ul><!--menu-->
+        </nav><!--menu-->
 
         <!-- Animal's List -->
         <section class="grid-section animais" id="animais" data-anime="scroll">
@@ -132,17 +132,63 @@
         <section class="grid-section faq" id="faq" data-anime="scroll">
                 <h1 class="titulo">FAQ</h1>
                 <dl class="faq-lista" data-anime="accordion">
-                    <dt>Qual a idade dos animais?</dt>
-                    <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                    <!-- First Question -->
+                    <dt>Qual a longevidade destes animais?</dt>
+                    <dd>
+                        Em liberdade, os leões podem viver até 16 anos.<br/>
+                        Os esquilos podem viver de 15 à 18 anos.<br/>
+                        A média de vida dos ursos são de 20 anos.<br/>
+                        As raposas selvagens podem viver de 10 até 15 anos.<br/>
+                        Os babuínos vivem de 35 a 45 anos.<br/>
+                        A média de vida dos lobos é de 6 à 8 anos.
+                    </dd>
 
-                    <dt>Eles são fantásticos?</dt>
-                    <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+                    <!-- Second Question -->
+                    <dt>Qual o habitat desses animais?</dt>
+                    <dd>
+                        A maior parte dos leões que hoje vive na natureza são encontrados nas savanas da África e demais regiões semi-desérticas. Ele já foi extinto de muitas áreas de florestas da Ásia e Europa.<br/>
+                        Os esquilos vivem em todos os continentes, exceto na Antártica e na Oceania. Esquilos arborícolas fazem suas casas nas árvores. Esquilos do solo vivem em buracos sob as pradarias, nos desertos e nos campos.<br/>
+                        O habitat dos ursos inclui a vegetação alpina (nos Alpes, Pirenéus e Balcãs), floresta temperada e a floresta de coníferas ou taiga (no norte da Europa, montanhas e outras áreas).<br/>
+                        As raposas são encontradas em hábitats diversos, geralmente em tocas, evitando apenas os desertos e as florestas muito densas.<br/>
+                        Os babuínos vivem principalmente na África e em algumas regiões da Ásia. Normalmente, habitam em regiões planas de savana, desertos e planícies rochosas.<br/>
+                        Os lobos se desenvolveram em diversos ambientes, como florestas temperadas, desertos, montanhas, tundras, taigas, campos e até mesmo em algumas áreas urbanas.
+                    </dd>
 
-                    <dt>Qual a diferença?</dt>
-                    <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                    <!-- Third Question -->
+                    <dt>Quais problemas os homens causam para os animais selvagens?</dt>
+                    <dd>
+                        <ul>
+                            <li>- Aumento da fronteira agrícola;</li>
+                            <li>- Crescimento sem planejamento das cidades;</li>
+                            <li>- Utilização indiscriminada de saneantes domissanitários;</li>
+                            <li>- Produção de resíduos, sinantropização de espécies de animais selvagens;</li>
+                            <li>- Impacto sobre as populações de predadores;</li>
+                            <li>- Sobrevivência de animais generalistas (aumenta quantidade de itens alimentares);</li>
+                            <li>- Diminuição de competidores (queda da biodiversidade);</li>
+                            <li>- Atividade mineradoras;</li>
+                            <li>- Desmatamento</li>
+                            <li>- Queimadas;</li>
+                            <li>- Contaminação eletromagnética e de hormoniomimeticos;</li>
+                            <li>- Descarte de lixo em locais inapropriados;</li>
+                            <li>- Colonização humana em várias regiões do mundo;</li>
+                            <li>- Enfermidades humanas.</li>
+                        </ul>
+                    </dd>
 
-                    <dt>Como proteger?</dt>
-                    <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+                    <!-- Fourth Question -->
+                    <dt>Como posso ajudar os animais selvagens?</dt>
+                    <dd>
+                        <ul>
+                            <li>- Seja um voluntário!</li>
+                            <li>- Ajude reciclando o que você produz;</li>
+                            <li>- Visite zoologicos, aquários, parques nacionais e refúgios de vida selvagem;</li>
+                            <li>- Denuncie todo e qualquer comércio de animais que você ver;</li>
+                            <li>- Não compre produtos que são feitos com animais ameaçados de extinção;</li>
+                            <li>- Plante árvores e recupere habitats;</li>
+                            <li>- Divulgue as informações acima;</li>
+                            <li>- Doe para a nossa instituição com a finalidade de manter ativa a nossa operação.</li>
+                        </ul>
+                    </dd>
                 </dl><!--faq-lista-->
         </section><!--faq-->
 
@@ -170,7 +216,7 @@
                 <li><img src="img/slide/wolf-slide.jpg" alt="Wolf/Lobo"></li>
                 </ul><!--slide-->
             </div><!--slide-wrapper-->
-        </section>
+        </section><!--galeria-->
 
         <!-- Contact Area -->
         <section class="grid-section contato" id="contato" data-anime="scroll">
@@ -203,10 +249,10 @@
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                 
                 <label for="password">Senha</label>
-                <span><a href="#">Esqueceu a sua senha?</a></span>
+                <span><a href="login.html">Esqueceu a sua senha?</a></span>
                 <input type="password" name="password" id="password" placeholder="Digite sua senha">
                 <button type="submit">Fazer Login</button>
-                <p>Ainda não tem uma conta? <a href="#">Cadastre-se!</a></p>
+                <p>Ainda não tem uma conta? <a href="login.html">Cadastre-se!</a></p>
             </form>
         </div><!--modal-->
     </section><!--modal-container-->
