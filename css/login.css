@@ -1,0 +1,92 @@
+.flex-box {
+  display: flex;
+  max-width: 700px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #222;
+  text-transform: uppercase;
+  margin: -50px auto;
+}
+
+#register-area {
+  flex: 1;
+  margin-left: 50px;
+}
+
+#login-area {
+  flex: 1;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #222;
+  text-transform: uppercase;
+  margin-top: -50px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: none;
+  color: #222;
+}
+
+input {
+  width: 80%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid #E54;
+  padding: 10px;
+  outline: none;
+  background-color: transparent;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #E54;
+  border: 2px solid #E54;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #222;
+  border-color: #222;
+  transition: .3s;
+}
+
+.login-footer {
+  margin-top: 80px;
+}
+
+@media (max-width: 700px) {
+  .flex-box {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #register-area {
+    margin: -20px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #login-area {
+    margin-top: 20px;
+  }
+
+  input {
+    width: 85%;
+  }
+
+  .login-footer {
+    margin-top: 15px;
+  }
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais Fantásticos</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.className += 'js';</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <!-- Menu -->
+        <nav class="menu" data-menu="smooth">
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul data-menu="list" id="menu">
+                <li><a href="https://animais-fantasticos.matheusfoganholo.com.br/#animais">Animais</a></li>
+                <li data-dropdown>
+                    <a href="">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ONG</a></li>
+                        <li><a href="#">Doadores</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://animais-fantasticos.matheusfoganholo.com.br/#faq">FAQ</a></li>
+                <li><a href="https://animais-fantasticos.matheusfoganholo.com.br/#contato">Contato</a></li>
+                <li><a data-modal="open-modal" href="index.html">Voltar <span class="arrow-black"></span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Title -->
+        <section class="grid-section cadastro" id="cadastro" data-anime="scroll">
+          <h1 class="titulo">Animais Fantásticos</h1>
+          <h3>Ainda não tem uma conta? Cadastre-se!</h3>
+    </div><!--grid-container-->
+
+        <!-- Register Area -->
+
+          <div class="flex-box">
+            <div id="register-area">
+              <h2>Cadastre-se</h2>
+              <form id="form-register">
+                <!-- Nome -->
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+
+                <!-- E-mail -->
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+
+                <!-- Password -->
+                <label for="password3">Senha:</label>
+                <input type="password3" name="password3" id="password3" placeholder="Digite sua senha" required>
+
+                <!-- RG -->
+                <label for="rg">RG:</label>
+                <input type="number" name="rg" id="rg" placeholder="Digite seu RG" required>
+
+                <!-- CPF -->
+                <label for="CPF">CPF:</label>
+                <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
+
+                <!-- Submit -->
+                <button id="register-button">Realizar Cadastro</button>
+              </form>
+            </div><!--register-area-->
+            <div id="login-area">
+              <h2>Faça Login</h2>
+              <form>
+                <!-- E-mail -->
+                <label for="email3">E-mail:</label>
+                <input type="email3" name="email3" id="email3" placeholder="Digite seu e-mail" required>
+
+                <!-- Password -->
+                <label for="password2">Senha:</label>
+                <input type="password2" name="password2" id="password2" placeholder="Digite sua senha" required>
+
+                <!-- Submit -->
+                <button id="login-button">Fazer Login</button>
+              </form>
+
+              <h2>Esqueceu a sua senha?</h2>
+              <form>
+                <!-- E-mail -->
+                <label for="email2">E-mail:</label>
+                <input type="email2" name="email2" id="email2" placeholder="Digite seu e-mail" required>
+
+                <!-- Submit -->
+                <button id="recovery-button">Recuperar Senha</button>
+              </form>
+            </div><!--login-area-->
+          </div><!--flex-box-->
+        </section><!--grid-section-cadastro-->
+
+      <div class="grid-container">
+        <!-- Footer Area -->
+        <footer class="copy login-footer">
+          <p>Todos os direitos reservados.</p>
+        </footer><!--copy-->
+      </div><!--grid-container-->
+
+
+    <!-- JavaScript -->
+    <script>
+      const registerButton = document.getElementById('register-button');
+      registerButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('Cadastro realizado com sucesso. Aguarde aprovação!');
+      });
+
+      const loginButton = document.getElementById('login-button');
+      loginButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('Desculpe, não encontramos essa conta no banco de dados!');
+      });
+
+      const recoveryButton = document.getElementById('recovery-button');
+      recoveryButton.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('Desculpe, não encontramos essa conta no banco de dados!');
+      });
+    </script>
+    <script type="module" src="js/login-script.js"></script>
+  </body>
