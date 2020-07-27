@@ -83,7 +83,7 @@ body {
 }
 
 /* Title Description */
-.animais h3, .cadastro h3 {
+.animais h3, .cadastro h3, .about-page h3 {
     grid-column: 1/4;
     margin-top: -5px;
     margin-bottom: 3rem;

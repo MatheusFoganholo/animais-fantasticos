@@ -11,6 +11,7 @@ import fetchAnimals from './modules/fetch-animals.js';
 import fetchBitcoin from './modules/fetch-bitcoin.js';
 import SlideNav from './modules/slide.js';
 import SectionHeight from './modules/section-height.js';
+import redirect from './modules/redirect.js';
 
 // Navigation By Tabs
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
@@ -57,3 +58,6 @@ slide.addControl('.custom-controls');
 
 // Section Height (Animals Description)
 SectionHeight();
+
+// Redirect Link on Menu
+redirect();
